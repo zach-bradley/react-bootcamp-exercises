@@ -1,5 +1,20 @@
 .Board {
   margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 0 5px #fff, -10px 0 80px #f0f, 10px 0 80px #0ff;
+}
+
+table tr:first-child td:first-child {
+  border-radius: 10px 0 0 0 !important;
+}
+table tr:first-child td:last-child {
+  border-radius: 0 10px 0 0 !important;
+}
+table tr:last-child td:first-child {
+  border-radius: 0 0 0 10px !important;
+}
+table tr:last-child td:last-child {
+  border-radius: 0 0 10px 0 !important;
 }
 
 @font-face {
@@ -38,6 +53,10 @@
   -moz-animation: neon-blue 2s linear infinite;
   -webkit-animation: neon-blue 2s linear infinite;
   -o-animation: neon-blue 2s linear infinite;
+}
+
+.winner .neon-blue, .winner .neon-orange {
+  font-size: 200px;
 }
 
 
