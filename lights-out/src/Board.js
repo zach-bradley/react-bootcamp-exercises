@@ -33,8 +33,11 @@ class Board extends Component {
 
   constructor(props) {
     super(props);
-
     // TODO: set initial state
+    this.state = {
+      hasWon : false,
+      board : 
+    }
   }
 
   /** create a board nrows high/ncols wide, each cell randomly lit or unlit */
@@ -73,14 +76,19 @@ class Board extends Component {
   /** Render game board or winning message. */
 
   render() {
-
     // if the game is won, just show a winning msg & render nothing else
-
     // TODO
-
     // make table board
-
     // TODO
+    <table>
+      <tbody>
+        <tr>
+          <Cell isLit={true} />
+          <Cell isLit={false} />
+          <Cell isLit={true} />
+        </tr>
+      </tbody>
+    </table>
   }
 }
 
