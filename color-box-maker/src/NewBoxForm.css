@@ -1,0 +1,9 @@
+label {
+  margin-left: 10px;
+}
+
+.BoxList {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
